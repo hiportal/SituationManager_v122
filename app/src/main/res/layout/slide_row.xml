@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:background="@drawable/item_list_bg" -->
+<LinearLayout 	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	>
+	
+    <LinearLayout
+		android:groupIndicator="@null"
+
+        android:id="@+id/llSlide"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:paddingLeft="10.0dip"
+		android:gravity="center_vertical"
+		>
+		<TextView
+			android:groupIndicator="@android:color/transparent"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/IISlideTextView"
+			android:visibility="gone"></TextView>
+	</LinearLayout>
+</LinearLayout>

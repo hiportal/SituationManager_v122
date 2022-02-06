@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/app_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+
+        >
+        <!-- 상단 타이틀바 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@drawable/oneclci_emple"
+            >
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="15"
+                android:layout_gravity="center"
+                android:background="@drawable/item_btn_back"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="" />
+            <ImageView
+                android:id="@+id/btnUserInfo"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:background="@drawable/item_btn_userinfo"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="92"
+            android:weightSum="100"
+            android:orientation="vertical">
+            <WebView
+                android:id="@+id/situation_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+        </LinearLayout>
+
+        <!-- 상황내용 및 조치 상세 -->
+
+
+        <!-- 하단 버튼-->
+
+    </LinearLayout>
+</LinearLayout>

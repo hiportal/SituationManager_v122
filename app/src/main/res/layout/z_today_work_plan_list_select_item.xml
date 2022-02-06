@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="360">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="322"
+        android:background="@drawable/z_recycler_line"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:weightSum="322"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="220"
+
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/approvalCheck"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="98"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+   <!--     <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="258"
+            android:orientation="vertical"
+            android:weightSum="60">
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100">
+
+            <ImageView
+                android:id="@+id/approvalCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="fitCenter"
+       />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

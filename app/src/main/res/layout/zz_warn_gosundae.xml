@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:background="@color/contentsBackground"
+    android:weightSum="150"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="110"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/warn_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/item_ing"
+            android:fontFamily="@font/notokrd"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/userCheckTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:background="@drawable/gongsa_workplan_insert">
+        <LinearLayout
+            android:id="@+id/del_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gongsa_workplan_insert"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="50">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_ok"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:textSize="20sp"
+            android:textColor="@color/item_ing"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/del_no"
+            android:background="@drawable/gongsa_workplan_register_chogiwhabtn"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_ok"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소"
+                android:textSize="20sp"
+                android:textColor="@color/item_ing"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

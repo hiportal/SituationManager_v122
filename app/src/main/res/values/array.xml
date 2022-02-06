@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="workTypeCategorizationName">
+        <item>노면보수작업</item>
+        <item>조경작업</item>
+        <item>터널내작업</item>
+        <item>교량작업</item>
+        <item>시설물설치</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="workTypeCategorizationCode">
+        <item>021</item>
+        <item>022</item>
+        <item>023</item>
+        <item>024</item>
+        <item>025</item>
+        <item>020</item>
+    </string-array>
+
+</resources>

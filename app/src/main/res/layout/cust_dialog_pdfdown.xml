@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:background="@drawable/pop_photo_bg"
+    android:gravity="center"
+    android:id="@+id/pdfDownload">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="100"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tunnelTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:text="TEST"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:autoLink="web"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="100">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="100"
+            >
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="19"
+                android:background="@drawable/pdf_outline"
+                android:id="@+id/pdf_ouline"
+                android:contentDescription="개요도"
+                />
+
+            <ImageView
+                android:id="@+id/pdf_contacts"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="19"
+                android:background="@drawable/pdf_contacts"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="비상연락망"
+                />
+
+            <ImageView
+                android:id="@+id/pdf_floorplan"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="19"
+                android:background="@drawable/pdf_floorplan"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="도면"
+                />
+
+            <ImageView
+                android:id="@+id/pdf_other"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="19"
+                android:background="@drawable/pdf_other"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="기타자료"
+                />
+
+            <ImageView
+                android:id="@+id/pdf_cancle"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="19"
+                android:background="@drawable/btn_photo_close"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="취소"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="100"></LinearLayout>
+
+
+</LinearLayout>

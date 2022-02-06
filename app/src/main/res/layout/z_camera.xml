@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="640"
+    >
+        <FrameLayout
+            android:id="@+id/camera_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="584">
+
+
+            <com.ex.gongsa.Preview
+                android:id="@+id/cameraPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+               />
+
+            <TableLayout
+                android:id="@+id/tablelayout"
+                android:layout_width="150sp"
+                android:layout_height="75sp"
+                android:visibility="visible"
+                android:layout_gravity="right|bottom"
+
+                android:background="@drawable/camera_line"
+                >
+                <TableRow
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/camera_line"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/camera_line"
+                        android:text="본 부"
+
+                        android:textColor="@color/textColorBlack"
+                        android:layout_weight="30"/>
+
+                    <TextView
+                        android:id="@+id/bonbuTextView"
+                        android:layout_weight="70"
+                        android:textColor="@color/textColorBlack"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/camera_line"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/camera_line"
+                        android:text="지 사"
+
+                        android:textColor="@color/textColorBlack"
+                        android:layout_weight="30"/>
+
+                    <TextView
+                        android:id="@+id/jisaTextView"
+                        android:layout_weight="70"
+                        android:textColor="@color/textColorBlack"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/camera_line"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/camera_line"
+                        android:text="노선"
+
+                        android:textColor="@color/textColorBlack"
+                        android:layout_weight="30"/>
+
+                    <TextView
+                        android:id="@+id/nosunTextView"
+                        android:layout_weight="70"
+                        android:textColor="@color/textColorBlack"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/camera_line"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/camera_line"
+                        android:text="감독원"
+
+                        android:textColor="@color/textColorBlack"
+                        android:layout_weight="30"/>
+
+                    <TextView
+                        android:id="@+id/gamdokTextView"
+
+                        android:layout_weight="70"
+                        android:textColor="@color/textColorBlack"/>
+                </TableRow>
+
+
+            </TableLayout>
+        </FrameLayout>
+    <LinearLayout
+        android:id="@+id/test1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="56"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ibtnSave"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@drawable/gongsa_workplan_insert"
+            android:gravity="center_vertical|center_horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="촬영"
+                android:textSize="30sp"
+                android:textColor="@color/item_ing"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ibtnCancel"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@drawable/gongsa_workplan_register_chogiwhabtn"
+            android:gravity="center_vertical|center_horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소"
+                android:textSize="30sp"
+                android:textColor="@color/item_ing"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+<!-- android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"-->

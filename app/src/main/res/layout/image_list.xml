@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_gravity="center" 
+  android:orientation="vertical"
+  android:background="@drawable/app_bg"
+  android:weightSum="100"
+  >
+ <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="8"
+      android:gravity="center"
+      android:orientation="horizontal"
+   	  android:weightSum="100"
+   	  android:background="@drawable/header_view_photo"
+      >
+
+      <ImageView
+          android:id="@+id/btnBack"
+          android:layout_width="0dp" 
+          android:layout_height="fill_parent"
+          android:layout_weight="16"
+          android:layout_gravity="center"
+          android:background="@drawable/item_btn_back"
+          />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight="68"
+          android:gravity="center"
+          />
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight="16"
+          android:gravity="center"
+          />
+
+  </LinearLayout>
+  
+  <ListView
+      android:id="@+id/lvList"
+      android:layout_width="match_parent"
+      android:layout_height="0dp" 
+      android:layout_weight="72"
+      android:cacheColorHint="#00000000">
+  </ListView>
+   <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_weight="20"
+      >
+	  
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center"
+      	
+	    >
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="19sp"
+		    android:text="첨부파일수:"
+		    />
+		<TextView 
+		    android:id="@+id/totalFileListCount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="19sp"
+		    android:text="0개"
+		    />
+		<TextView 
+		    android:layout_marginLeft="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="19sp"
+		    android:text="용량합계:"
+		    />
+		<TextView 
+		    android:id="@+id/totalFileListSize"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="19sp"
+		    android:text="0.0MB"
+		    />
+    </LinearLayout>
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center"
+	    >
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="첨부파일은 5개, 용량합계 10MB 까지만 가능합니다."
+		    android:textColor="#FF5E00"
+		    android:textSize="17sp"    
+	        />
+	    
+	</LinearLayout>	    
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="240dp"
+    android:weightSum="100"
+    android:background="@drawable/pop_list_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        >
+        <LinearLayout 
+             android:layout_width="0dp"
+             android:layout_height="fill_parent"
+             android:layout_weight="26"
+             android:orientation="vertical"
+             android:weightSum="100"
+             android:gravity="center|left"
+             >
+          <ImageView 
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              android:layout_weight="40"
+              android:gravity="left"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/tit_start_list"
+              />
+         </LinearLayout>
+
+
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+         android:layout_width="fill_parent" 
+         android:layout_height="0dp"
+         android:layout_weight="60"
+         android:orientation="vertical"
+         android:weightSum="100"
+         android:gravity="center"
+         >
+           <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="0dp"
+	         android:layout_weight="20"
+	         android:background="@drawable/list_start_header"
+	         />
+            <LinearLayout 
+		         android:layout_width="fill_parent" 
+		         android:layout_height="0dp"
+		         android:layout_weight="80"
+		         android:orientation="horizontal"
+		         android:weightSum="100"
+		         android:gravity="center"
+		         >
+	           <ListView
+			        android:id="@+id/listView"
+			        android:layout_width="0dp"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="93.8"
+			        android:textSize="17sp"
+			        android:textColor="#000000"
+			        />
+	           </LinearLayout>
+       
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="100"
+        android:layout_marginBottom="10sp"
+        >
+
+	   <ImageView
+	       android:id="@+id/btnBack"
+	       android:layout_width="0dp"
+	       android:layout_height="46dp"
+	       android:layout_margin="7dp"
+	       android:layout_weight="35.86"
+	       android:background="@drawable/btn_photo_close" />
+
+    </LinearLayout>
+        
+
+
+    </LinearLayout>

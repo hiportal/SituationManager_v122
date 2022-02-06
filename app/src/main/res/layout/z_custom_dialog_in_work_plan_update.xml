@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentsBackground"
+    android:weightSum="100"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/gongsa_result_bonbuDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_jisaDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_nosunDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_direnctionDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_roadDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_workType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_gamdokDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_gongsaContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_result_endTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_startGugan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_endGugan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_Inwonjangbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/gongsa_result_gosundaeNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="20"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/gongsa_workplan_insert"
+        android:weightSum="90"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/sendApprovalRequest_in_work_plan_update"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_ok"/>
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="match_parent"
+                android:text="수정"
+                android:fontFamily="@font/notokrm"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/item_ing"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/updateContent_Li"
+            android:background="@drawable/gongsa_workplan_register_chogiwhabtn"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_ok"/>
+            <TextView
+                android:layout_width="40sp"
+                android:layout_height="match_parent"
+                android:text="취소"
+                android:fontFamily="@font/notokrm"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/item_ing"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/guganOverLapCheck_Li"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/gongsa_workplan_insert">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_ok"/>
+            <TextView
+                android:layout_width="87sp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="중첩 구간체크"
+                android:fontFamily="@font/notokrm"
+                android:textSize="15sp"
+                android:textColor="@color/item_ing"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

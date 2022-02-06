@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/contentsBackground"
+    android:weightSum="150"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/userInputCheck"
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:fontFamily="@font/notokrd"
+
+
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/userconfirmedCheck"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/gongsa_workplan_insert">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_ok"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textSize="20sp"
+            android:textColor="@color/item_ing"/>
+    </LinearLayout>
+</LinearLayout>

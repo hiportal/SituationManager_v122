@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="640"
+    >
+    <!-- 탑바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:background="@color/colorTopBackground"
+        android:weightSum="360"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="322"
+            android:gravity="center_horizontal|center_vertical">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/z_goto_prev_activity"
+
+
+
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="38"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="210"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="기등록작업계획 조회"
+                    android:fontFamily="@font/notokrm"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="56"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="528"
+        android:background="@color/workInsertCenterBackGround"
+        android:weightSum="360"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="306"
+            android:gravity="top"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/workPlanResiterRecyclerItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gotoMainBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:background="@drawable/gongsa_workplan_insert"
+        android:gravity="center_horizontal|center_vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_ok"/>
+        <TextView
+            android:id="@+id/gotoMainTV"
+            android:layout_width="90dp"
+
+            android:layout_height="30dp"
+            android:text="메인으로"
+            android:textSize="20sp"
+            android:fontFamily="@font/notokrm"
+            android:textColor="@color/item_ing"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

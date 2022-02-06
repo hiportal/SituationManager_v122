@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@color/contentsBackground"
+    android:weightSum="470"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@color/contentsBackground"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_shoulderSafeFacilityRemoveStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="갓길 안전시설 설치 시작"
+            android:layout_weight="80"
+            android:background="@color/workInsertBottomBackGround"
+            android:fontFamily="@font/notokrm"
+            android:textStyle="normal"
+            android:textSize="40px"
+            android:gravity="center_vertical|center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@color/contentsBackground"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_roadSafeFacilityInstallStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="본선 안전시설 설치 시작"
+            android:layout_weight="80"
+            android:background="@color/workInsertBottomBackGround"
+            android:fontFamily="@font/notokrm"
+            android:textStyle="normal"
+            android:textSize="40px"
+            android:gravity="center_vertical|center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@color/contentsBackground"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_todayWorkStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="작업 시작"
+            android:layout_weight="80"
+            android:background="@color/workInsertBottomBackGround"
+            android:fontFamily="@font/notokrm"
+            android:textStyle="normal"
+            android:textSize="40px"
+            android:gravity="center_vertical|center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@color/contentsBackground"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <TextView
+        android:id="@+id/btn_safeFacilityRemoveStart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="안전시설 철거 시작"
+        android:layout_weight="80"
+        android:background="@color/workInsertBottomBackGround"
+        android:fontFamily="@font/notokrm"
+        android:textStyle="normal"
+        android:textSize="40px"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@color/contentsBackground"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_todayWorkEnd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="작업 종료"
+            android:layout_weight="80"
+            android:background="@color/workInsertBottomBackGround"
+            android:fontFamily="@font/notokrm"
+            android:textStyle="normal"
+            android:textSize="40px"
+            android:gravity="center_vertical|center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45">
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

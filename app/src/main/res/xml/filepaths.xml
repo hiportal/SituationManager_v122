@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 안드로이드 pdf 파일을 열기위한 설정 xml 파일-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+<!--  <files-path
+        name="storage/emulated/0"
+        path="."/>
+
+ <cache-path
+      name="cache"
+      path="." /> &lt;!&ndash;Context.getCacheDir() 내부 저장소&ndash;&gt;
+  <files-path
+      name="files"
+      path="." /> &lt;!&ndash;Context.getFilesDir() 내부 저장소&ndash;&gt;
+
+  <external-path
+      name="external"
+      path="."/>  &lt;!&ndash;  Environment.getExternalStorageDirectory() 외부 저장소&ndash;&gt;
+  <external-cache-path
+      name="external-cache"
+      path="."/> &lt;!&ndash;  Context.getExternalCacheDir() 외부 저장소&ndash;&gt;
+  <external-files-path
+      name="external-files"
+      path="."/>-->
+
+ <!-- <files-path
+      name="assets"
+      path="./assets"/>
+  <root-path name="assets" path="."/>-->
+  <paths>
+    <external-path name="storage/emulated" path="."/>
+  </paths>
+
+  <asset
+      name="assetup"
+      path="(2017) 고속도로_공사장_교통관리기준(상).pdf"
+      />
+
+  <asset
+      name="assetdown"
+      path="(2017) 고속도로_공사장_교통관리기준(하).pdf"
+      />
+
+  <asset
+      name="assetnew"
+      path="(2021) 고속도로_작업장_교통관리기준.pdf"
+      />
+
+
+</paths>

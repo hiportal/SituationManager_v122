@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/previewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+		<com.ex.situationmanager.util.Preview2 android:id="@+id/camera_preview"
+			android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>	
+		
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_vertical"
+	    >
+		<com.ex.situationmanager.util.VerticalSeekBar
+			android:id="@+id/SeekBar01"
+		    android:progressDrawable="@drawable/progress_vertical"
+		    android:thumb="@drawable/seek_thumb"
+		    android:layout_height="240dp" 
+		    android:layout_width="24dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginBottom="40dp"
+		    android:layout_gravity="center"
+		    />
+	</LinearLayout>
+		
+	<LinearLayout android:id="@+id/relativeLayout2" android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:background="@drawable/bg_pic" android:layout_alignParentBottom="true" android:orientation="horizontal"
+		android:gravity="center"
+	>
+		<ImageButton android:id="@+id/ibtnSave" 
+			android:layout_height="wrap_content" android:layout_width="wrap_content" 			
+			android:padding="0pt" 
+			 android:layout_toLeftOf="@+id/ibtnRunShutter"
+			android:src="@drawable/btn_pic_save"
+			android:contentDescription="저장"
+			>
+		</ImageButton>
+		<ImageButton android:id="@+id/ibtnRunShutter" 
+			android:layout_height="wrap_content" android:layout_width="wrap_content" 			
+			android:padding="0pt" 
+			android:src="@drawable/btn_pic_take"
+			android:contentDescription="촬영"
+			>
+		</ImageButton>
+		<ImageButton android:id="@+id/ibtnCancel" 
+			android:layout_height="wrap_content" android:layout_width="wrap_content" 			
+			android:padding="0pt" 
+			 android:layout_toRightOf="@+id/ibtnRunShutter"
+			 android:layout_marginLeft="20dp"
+			android:src="@drawable/btn_pic_cancel"
+			android:contentDescription="취소"
+			>
+		</ImageButton>		
+		<ImageView android:id="@+id/flashOnOff" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 			
+			android:src="@drawable/ic_launcher"
+			android:visibility="gone"
+			>
+		</ImageView>
+	</LinearLayout>
+</RelativeLayout>

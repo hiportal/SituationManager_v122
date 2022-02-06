@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:background="@drawable/pop_photo_bg"
+    android:gravity="center"
+    android:id="@+id/llMediaMain"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="100"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/tvTitleStartup"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:textColor="#000000"
+                android:text="[청주상주선]청주방향\n20.0km 1차로 사고발생 접보"
+                android:textSize="20sp"
+                android:autoLink="web"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="100"
+        >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="60"
+	        android:orientation="horizontal"
+	        android:gravity="center"
+	        android:weightSum="100"
+	        >
+			<ImageView 
+			    android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_weight="24"
+				android:background="@drawable/item_bt_picture_select"			
+				android:id="@+id/goCamera"
+				android:contentDescription="사진"
+				/>
+			<ImageView 
+			    android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_weight="24"
+				android:background="@drawable/item_bt_album_select"			
+				android:id="@+id/goAlbum"
+				android:layout_marginLeft="4dp"
+				android:contentDescription="앨범"
+				/>
+			<ImageView 
+			    android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_weight="24"
+				android:background="@drawable/item_pho_pre"			
+				android:id="@+id/goPreview"
+				android:layout_marginLeft="4dp"
+				android:contentDescription="앨범"
+				/>
+			
+			<ImageView 
+			    android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_weight="24"
+				android:layout_marginLeft="4dp"
+				android:background="@drawable/item_close"
+				android:id="@+id/ibtnClose"
+				android:contentDescription="뒤로"
+				/>
+		   
+	    </LinearLayout>
+        
+	</LinearLayout>
+
+</LinearLayout>

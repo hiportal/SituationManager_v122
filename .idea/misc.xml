@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v116/app/src/main/res/drawable/gongsa_spinner_btn.xml" value="0.3416666666666667" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v116/app/src/main/res/layout/inner_emploee_news.xml" value="0.35733695652173914" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v116/app/src/main/res/layout/notificationview.xml" value="0.36614583333333334" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v116/app/src/main/res/layout/patrol_list_row.xml" value="0.36614583333333334" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v116/app/src/main/res/layout/patrol_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v116/app/src/main/res/layout/tow_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v118/app/src/main/res/layout/z_activity_main.xml" value="0.2265625" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v118/app/src/main/res/layout/z_custom_dialog.xml" value="0.3509963768115942" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v118/app/src/main/res/layout/z_custom_dialog_in_work_plan_update.xml" value="0.2265625" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v118/app/src/main/res/layout/z_today_work_plan_detail.xml" value="0.34601449275362317" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v118/app/src/main/res/layout/z_work_plan_noti.xml" value="0.2265625" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v118/app/src/main/res/layout/z_work_plan_register.xml" value="0.2265625" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v118/app/src/main/res/layout/zz_work_plan_register.xml" value="0.2265625" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/layout/dialog_jochi.xml" value="0.23541666666666666" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/layout/main.xml" value="0.3134057971014493" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/layout/main_for_customer.xml" value="0.3134057971014493" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/layout/z_activity_main.xml" value="0.25" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/layout/z_today_work_plan_content_popup.xml" value="0.3541666666666667" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/layout/z_today_work_plan_register.xml" value="0.33967391304347827" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/layout/zz_work_plan_register.xml" value="0.3541666666666667" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v120/app/src/main/res/xml/network_security_config.xml" value="0.15208333333333332" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v122/app/src/main/res/layout/dialog_direction.xml" value="0.23541666666666666" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v122/app/src/main/res/layout/patrol_main.xml" value="0.27445652173913043" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v122/app/src/main/res/layout/tow_main.xml" value="0.23541666666666666" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v97/app/src/main/res/layout/patrol_main.xml" value="0.34148550724637683" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v97/app/src/main/res/layout/popupscreen_tow.xml" value="0.22760416666666666" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v97/app/src/main/res/layout/popupscreen_tow_row.xml" value="0.22760416666666666" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v97/app/src/main/res/layout/slide_row.xml" value="0.22760416666666666" />
+        <entry key="..\:/Backup/2_situationmanager/SituationManager_v97/app/src/main/res/layout/tow_main.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/drawable/ic_baseline_directions_car_24.xml" value="0.378125" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/layout/agree.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/layout/dispatchinfo.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/layout/item_dispatch.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/layout/patrol_main_land.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/layout/tow_main.xml" value="0.33" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/layout/userinfo.xml" value="0.2046875" />
+        <entry key="..\:/Users/awasoft/Desktop/Project/SituationManager/app/src/main/res/layout/zz_userinfo_setting_all_jisa_list.xml" value="0.2046875" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/exApp.mp4" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

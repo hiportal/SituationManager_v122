@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:background="@drawable/item_list_bg" -->
+<LinearLayout 	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	>
+	
+    <LinearLayout 	
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="80dp"
+		android:paddingLeft="10.0dip"
+		android:gravity="center_vertical"
+		android:background="@drawable/photo_pre_line"
+		android:weightSum="100"
+		>
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_height="fill_parent"
+		    android:layout_width="0dp"
+		    android:layout_weight="15"
+		    android:weightSum="100"
+		    android:gravity="center"
+		    >
+		    <ImageView
+				android:id="@+id/itemImage"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="80"
+				/>
+		</LinearLayout>		
+		
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_height="fill_parent"
+		    android:layout_width="0dp"
+		    android:layout_weight="67"
+		    android:weightSum="100"
+		    android:gravity="center"
+		    android:paddingLeft="5.0dip"
+		    >
+		    <TextView
+		        android:id="@+id/fileName"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="30"
+				android:textSize="15.0sp"
+				android:textColor="#3c6fa4"
+			/>
+		    <TextView
+		        android:id="@+id/fileSize"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="30"
+				android:textSize="17.0sp"
+				android:textColor="#333333"
+			/>
+		    
+		</LinearLayout>
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_height="fill_parent"
+		    android:layout_width="0dp"
+		    android:layout_weight="12"
+		    android:weightSum="100"
+		    android:gravity="center"
+		    android:paddingLeft="5.0dip"
+		    >
+		    <ImageView
+		        android:id="@+id/btn_delete"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="47"
+				android:background="@drawable/btn_pho_del"
+				/>
+		    
+		</LinearLayout>		
+		
+		
+	</LinearLayout>
+</LinearLayout>

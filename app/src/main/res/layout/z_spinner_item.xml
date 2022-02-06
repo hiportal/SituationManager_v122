@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:singleLine="true"
+    android:layout_height="55dp"
+    android:checkMark="@drawable/gongsa_spinner_btn"
+    android:textSize="20sp"
+    android:textColor="#000000"
+    android:fontFamily="@font/notokrm"
+    android:gravity="center_vertical"
+
+    />
+
+<!--
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:singleLine="true"
+    android:layout_height="?android:attr/dropdownListPreferredItemHeight"
+    android:checkMark="@drawable/gongsa_spinner_btn"
+    android:textSize="20sp"
+    android:textColor="#000000"
+    android:fontFamily="@font/notokrm"
+    />-->
+<!--
+
+
+
+android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:fontFamily="@font/notokrm"
+    android:textAlignment="viewEnd"
+    android:textColor="#000000"
+    android:textSize="20sp"
+
+
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="1dp"
+
+
+    android:textScaleX="1"
+    android:singleLine="true"
+    android:ellipsize="marquee"
+    android:scaleX="0.4"
+    android:scaleY="0.7"
+
+
+
+
+
+android:checkMark="@drawable/gongsa_spinner_btn"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_gravity="center_horizontal"
+
+    >
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/spinnerItems"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:fontFamily="@font/notokrm"
+            android:textAlignment="gravity"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="1dp"
+
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:src="@drawable/gongsa_spinner_btn"/>
+    </LinearLayout>
+</LinearLayout>
+-->

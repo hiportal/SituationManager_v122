@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:background="@color/colorWorkEndPopUp"
+    android:weightSum="200"
+    android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/todayWorkEndPopUpLayout"
+    android:layout_width="250dp"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/todayWorkEndPopUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:layout_weight="80"
+        android:fontFamily="@font/notokrm"
+        android:textStyle="normal"
+        android:textSize="70px"
+        android:gravity="center_vertical|center_horizontal"></TextView>
+
+</LinearLayout>
+</LinearLayout>
+
+
+

@@ -1,0 +1,287 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ex.situationmanager"
+
+    >
+    <!-- 버전 변경시 서버 DB oc_appversion  (통합DB 사업으로 테이블명 변경 : T_TRSC_APP_VRSN01M1)테이블 버전정보 변경해야함. ( 마켓 업데이트 완료후 진행) -->
+
+    <application
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:usesCleartextTraffic="true">
+
+        <!-- 기존 원클릭 전송 익셉션 처리 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".IntroActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PatrolMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TowMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CameraActivity"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        <activity
+            android:name=".CameraActivity2"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        <activity
+            android:name=".BaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LocChangeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ImageListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ImagePopupActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PatrolRegActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ex.situationmanager.multiphoto.MyGalleryPicker"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.ex.situationmanager.InnerEmployActivity"
+
+            />
+
+        <activity android:name="com.ex.situationmanager.PatrolCCtvActivity"
+
+            />
+        <activity
+            android:name="com.ex.situationmanager.AndroidCustomGalleryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ex.situationmanager.multiphoto.MultiPhotoSelector"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ex.situationmanager.multiphoto.GalleryListMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogSituEnd"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogIntroActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogTowSelectJisaActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogUserInfoActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogDispatchInfoActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogConfirmActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogDirection"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogJochi"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.ex.situationmanager.service.SituationService"
+            android:enabled="true">
+
+        </service>
+
+
+        <!-- 공사관리 시작-->
+        <!--Asset폴더의 pdf파일을 열기위한 provider설정(버전 25이상) -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ex.gongsa.view.GenericFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"
+
+                />
+            <!--		tools:replace="android:resource"   com.ex.gongsa.view.GenericFileProvider-->
+        </provider>
+
+        <activity
+            android:name="com.ex.gongsa.view.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.GuganOverLapListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.WorkPlanListUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.TodayWorkPlanSelectDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.TodayWorkPlanSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.GuganOverLapWorkPlanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.TodayWorkPlanSelectUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.WorkPlanRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.WorkPlanResisterListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.ex.gongsa.view.WorkPlanResisterLoadContentActivity"
+            android:screenOrientation="portrait" />
+
+        <!--2020.08 작업보고팝업-->
+        <activity
+            android:name="com.ex.gongsa.view.TodayWorkPlanSelectDetailPopUp"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+
+        <activity
+            android:name="com.ex.gongsa.view.WorkPlanListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.TodayWorkPlanRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.TodayWorkPlanRegisterDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.WorkPlanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.gongsa.view.TodayWorkPlanUpdateActivity_N"
+            android:screenOrientation="portrait" />
+        <!--android:windowSoftInputMode="adjustPan|stateHidden"-->
+        <!--	android:windowSoftInputMode="adjustNothing"-->
+        <!-- 공사관리 끝-->
+        <!-- 문자 브로드캐스트를 위한 설정 : 설정자 : 최창유-->
+        <!--<receiver android:name="com.ex.situationmanager.service.SituationBroadcast">
+        &lt;!&ndash;	<intent-filter android:priority="1">
+                <action android:name="android.provider.Telephney.SMS_RECEIVED"/>
+            </intent-filter>&ndash;&gt;
+            <intent-filter>
+                <action android:name="quit_vpn"/>
+            </intent-filter>
+        </receiver>-->
+
+        <receiver
+            android:name=".service.SituationBroadcast"
+            android:enabled="true">
+            <intent-filter android:priority="10000">
+                <!--<action android:name="android.provider.Telephony.SMS_RECEIVED"/>-->
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />	 	-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> -->
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+
+    <!--JSPREMARK : modified 포그라운드 서비스 구성을 위한 권한-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <!--JSPREMARK :브로드캐스트를 통한 문자 확인을 위한 권한 : 작성자 : 최창유-->
+    <!--	<uses-permission android:name="android.permission.READ_SMS" />
+        <uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+
+
+</manifest>
+

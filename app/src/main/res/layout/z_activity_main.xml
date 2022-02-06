@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="640">
+    <!-- 탑 메뉴-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:background="@color/colorTopBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="322">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="56"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_ex" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="19" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="175">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/smart_title" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="19" />
+
+            <include
+                layout="@layout/z_gongsa_include_top_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="56"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--탑바 밑에 부분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="584">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--본문 색, 배경사진-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/contentsBackground"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:weightSum="584">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="205"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/smart_back" />
+            </LinearLayout>
+
+            <!-- 메뉴 위치조정은 여기서 weightSum으로 줄것-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:weightSum="805">
+                <!--상단 그림까지의 위치 잡음-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="128"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="322">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="40"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="15" />
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="30"
+                                android:orientation="vertical"
+                                android:weightSum="45"> <!--<LinearLayout
+                                android:id="@+id/edit_first_line_li"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="vertical"
+                                android:background="@drawable/gongsa_edit_jisa_bonbu"></LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5"/>
+                                <LinearLayout
+                                    android:id="@+id/edit_second_line_li"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="10"
+                                    android:orientation="vertical"
+                                    android:background="@drawable/gongsa_edit_jisa_bonbu"></LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5"/>
+                                <LinearLayout
+                                    android:id="@+id/edit_third_line_li"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="10"
+                                    android:orientation="vertical"
+                                    android:background="@drawable/gongsa_edit_jisa_bonbu"></LinearLayout>-->
+                                <ImageView
+                                    android:id="@+id/edit_main_ImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/gongsa_edit_jisa_bonbu" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="220" />
+                        <!--<TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="120"
+                            android:text="dsfdsdfsdf"
+                            android:textColor="@color/workInsert"/>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="120"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:weightSum="128">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="00" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="50"
+                                android:fontFamily="@font/notosanscjkkr_demilight_2"
+                                android:gravity="right"
+                                android:text="안녕하세요,"
+                                android:textColor="#fff"
+                                android:textSize="17dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="65"
+                                android:orientation="horizontal"
+                                android:weightSum="120">
+
+                                <TextView
+                                    android:id="@+id/mainUserName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="90"
+                                    android:fontFamily="@font/notosanscjkkr_medium_2"
+                                    android:gravity="right"
+                                    android:textColor="#fff"
+                                    android:textSize="25dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:fontFamily="@font/notosanscjkkr_demilight_2"
+                                    android:text="님"
+                                    android:textColor="#fff"
+                                    android:textSize="25dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="677"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="360">
+                    <!--메뉴버튼 폭 잡음-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="322"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:weightSum="394">
+                        <!--작업계획 등록-->
+                        <!--   <LinearLayout
+                               android:id="@+id/insertWork"
+                               android:layout_width="match_parent"
+                               android:layout_height="0dp"
+                               android:layout_weight="60"
+                               android:weightSum="1"
+                               android:orientation="horizontal"
+                               android:background="@drawable/rounded"
+                               android:layout_marginBottom="9dp"
+
+                               >
+                               <View
+                                   android:layout_width="22dp"
+                                   android:layout_height="match_parent"/>
+                               <ImageView
+                                   android:layout_width="46dp"
+                                   android:layout_height="match_parent"
+                                   android:scaleType="fitCenter"
+                                   android:src="@drawable/icon_workreg"/>
+                               <View
+                                   android:layout_width="22dp"
+                                   android:layout_height="match_parent"/>
+
+                               <TextView
+                                   android:id="@+id/workInsertTv"
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_weight="1"
+                                   android:gravity="center_vertical"
+                                   android:fontFamily="@font/notokrm"
+                                   android:text="작업계획 등록"
+                                   android:textSize="18sp"
+                                   android:textColor="@color/textColorBlack"/>
+                               <ImageView
+                                   android:layout_width="19dp"
+                                   android:layout_height="match_parent"
+                                   android:scaleType="fitCenter"
+                                   android:src="@drawable/btn_click"
+                                   android:paddingTop="4dp"
+                                   android:paddingBottom="4dp"/>
+                               <View
+                                   android:layout_width="19dp"
+                                   android:layout_height="match_parent"/>
+                           </LinearLayout>-->
+                        <LinearLayout
+                            android:id="@+id/insertWork"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="9dp"
+                            android:layout_weight="134">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="322">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="155">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="55">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gongsa_main_work_plan_resist_img" />
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="match_parent" />
+
+                                        <TextView
+                                            android:id="@+id/workInsertTv"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="80dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/notosanscjkkr_medium_2"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="작업계획 등록"
+                                            android:textColor="@color/newTextColor"
+                                            android:textSize="18sp" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="12" />
+
+                                <LinearLayout
+                                    android:id="@+id/selectWork"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="155">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="55">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gongsa_main_work_plan_selelct_img" />
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="match_parent" />
+
+                                        <TextView
+                                            android:id="@+id/workPlanTv"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="80dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/notosanscjkkr_medium_2"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="작업계획 조회"
+                                            android:textColor="@color/newTextColor"
+                                            android:textSize="18sp" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--작업계획 조회 -->
+                        <!--    <LinearLayout
+                                android:id="@+id/selectWork"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="60"
+                                android:layout_marginBottom="9dp">
+                               <RelativeLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+                                   <ImageView
+                                       android:layout_alignParentTop="true"
+                                       android:layout_alignParentBottom="true"
+                                       android:layout_width="match_parent"
+                                       android:src="@drawable/gongsa_main_work_plan_selelct_img"
+                                       android:layout_height="match_parent"
+                                       android:scaleType="fitXY"/>
+                                   <View
+                                       android:layout_width="90dp"
+                                       android:layout_height="match_parent"/>
+                                   <TextView
+                                       android:id="@+id/workPlanTv"
+                                       android:layout_width="150dp"
+                                       android:layout_marginLeft="90dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="1"
+                                       android:gravity="center_vertical"
+                                       android:fontFamily="@font/notokrm"
+                                       android:text="작업계획 조회"
+                                       android:textSize="18sp"
+                                       android:textColor="@color/textColorBlack"/>
+                               </RelativeLayout>
+                            </LinearLayout>-->
+                        <!--금일작업 등록 -->
+                        <!--   <LinearLayout
+                               android:id="@+id/todayWorkInsert"
+                               android:layout_width="match_parent"
+                               android:layout_height="0dp"
+                               android:layout_weight="60"
+
+
+
+                               android:layout_marginBottom="9dp">
+
+                               <RelativeLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+                                   <ImageView
+                                       android:layout_alignParentTop="true"
+                                       android:layout_alignParentBottom="true"
+                                       android:layout_width="match_parent"
+                                       android:src="@drawable/gongsa_main_today_work_insert"
+                                       android:layout_height="match_parent"
+                                       android:scaleType="fitXY"/>
+                                   <View
+                                       android:layout_width="90dp"
+                                       android:layout_height="match_parent"/>
+                                   <TextView
+                                       android:id="@+id/todayWorkInsertTv"
+                                       android:layout_width="150dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_marginLeft="90dp"
+                                       android:layout_weight="1"
+                                       android:gravity="center_vertical"
+                                       android:fontFamily="@font/notokrm"
+                                       android:text="금일작업 등록"
+                                       android:textSize="18sp"
+                                       android:textColor="@color/textColorBlack"/>
+
+                               </RelativeLayout>
+
+                           </LinearLayout>
+                           &lt;!&ndash; 금일작업 조회&ndash;&gt;
+                           <LinearLayout
+                               android:id="@+id/todayWorkSelect"
+                               android:layout_width="match_parent"
+                               android:layout_height="0dp"
+                               android:layout_weight="60"
+
+
+
+                               android:layout_marginBottom="9dp">
+
+                               <RelativeLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+                                   <ImageView
+                                       android:layout_alignParentTop="true"
+                                       android:layout_alignParentBottom="true"
+                                       android:layout_width="match_parent"
+                                       android:src="@drawable/gongsa_main_today_work_select"
+                                       android:layout_height="match_parent"
+                                       android:scaleType="fitXY"/>
+                                   <View
+                                       android:layout_width="90dp"
+                                       android:layout_height="match_parent"/>
+
+                                   <TextView
+
+                                       android:layout_width="150dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_marginLeft="90dp"
+                                       android:layout_weight="1"
+                                       android:fontFamily="@font/notokrm"
+                                       android:gravity="center_vertical"
+                                       android:text="금일작업 조회"
+                                       android:textColor="@color/textColorBlack"
+                                       android:textSize="18sp" />
+
+                               </RelativeLayout>
+
+                           </LinearLayout>-->
+
+                        <!-- -->
+                        <LinearLayout
+                            android:id="@+id/todayWorkInsert"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="9dp"
+                            android:layout_weight="134">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="322">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="155">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="55">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gongsa_main_today_work_insert" />
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="match_parent" />
+
+                                        <TextView
+                                            android:id="@+id/todayWorkInsertTv"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="80dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/notosanscjkkr_medium_2"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="금일작업 등록"
+                                            android:textColor="@color/newTextColor"
+                                            android:textSize="18sp" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="12" />
+
+                                <LinearLayout
+                                    android:id="@+id/todayWorkSelect"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="155">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="55">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gongsa_main_today_work_select" />
+
+                                        <View
+                                            android:layout_width="90dp"
+                                            android:layout_height="match_parent" />
+
+                                        <TextView
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="80dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/notosanscjkkr_medium_2"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="금일작업 조회"
+                                            android:textColor="@color/newTextColor"
+                                            android:textSize="18sp" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- -->
+                        <!-- 교통관리 기준-->
+                        <LinearLayout
+                            android:id="@+id/traficStandard"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="9dp"
+                            android:layout_weight="80">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/gongsa_main_traffic_admin_standard" />
+
+                                <View
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="110dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/notosanscjkkr_medium_2"
+                                    android:gravity="center_vertical"
+                                    android:text="교통관리 작업장 \n교통관리기준(21년)"
+                                    android:textColor="@color/item_ing"
+                                    android:textSize="18sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <!-- 교통관리도-->
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="9dp"
+
+
+                            android:layout_weight="60"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:id="@+id/traficManageMap"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/gongsa_main_traffic_admin_map" />
+
+                                <View
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="100dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/notosanscjkkr_medium_2"
+                                    android:gravity="center_vertical"
+                                    android:text="교통관리도"
+                                    android:textColor="@color/item_ing"
+                                    android:textSize="18sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

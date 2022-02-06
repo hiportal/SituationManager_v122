@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/contentsBackground"
+    android:weightSum="150"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/chdanBangSikDetail"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notokrd"
+
+
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/JaupclickOk"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/gongsa_workplan_insert">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_ok"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textSize="15sp"
+            android:fontFamily="@font/notokrm"
+            android:textColor="@color/item_ing"/>
+    </LinearLayout>
+</LinearLayout>

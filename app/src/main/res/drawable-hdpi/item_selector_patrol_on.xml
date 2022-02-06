@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- <item android:drawable="@color/item_stop" android:state_activated="false"/>
+    <item android:drawable="@color/item_selected" android:state_activated="true"/> -->
+
+	   <!-- <item android:drawable="@color/item_stop" android:state_pressed="true"/>
+	   <item android:drawable="@color/item_ing" android:state_selected="true"/>
+	   <item android:drawable="@color/item_selected" android:state_activated="true"/> -->
+
+	   <!-- <item android:drawable="@color/item_selected" android:state_pressed="true"/>
+	   <item android:drawable="@color/item_selected" android:state_selected="true"/>
+	   <item android:drawable="@color/item_stop" android:state_activated="true"/> -->
+   
+</selector>
+
+
+ 

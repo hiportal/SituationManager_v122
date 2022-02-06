@@ -1,0 +1,2430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="640">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:background="@color/colorTopBackground"
+        android:weightSum="360"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="322"
+            android:gravity="center_horizontal|center_vertical">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:gravity="center"
+                android:orientation="vertical">
+                <!-- <ImageView
+                     android:id="@+id/gongsaPrev"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/icon_prev"
+                     android:adjustViewBounds="true"/>-->
+                <include
+                    layout="@layout/z_goto_prev_activity"
+
+
+
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="38"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="210"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="금일작업 수정"
+                    android:fontFamily="@font/notokrm"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+            <!--<include
+                layout="@layout/z_gongsa_include_top_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="56"
+                />-->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="56"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="584"
+        android:weightSum="584"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="240"
+            android:background="@color/workInsertCenterBackGround"
+            android:weightSum="360"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="322"
+                android:gravity="top"
+                android:weightSum="210"
+                android:orientation="vertical">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="32"
+                    android:orientation="horizontal"
+                    android:weightSum="322">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="322"
+                        android:weightSum="322"
+                        android:orientation="horizontal"
+                        >
+                        <!--  <Spinner
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:includeFontPadding="false"></Spinner>-->
+                        <TextView
+                            android:id="@+id/bonbuTextView"
+                            android:background="@drawable/insert_line_color"
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="155"
+
+
+
+                            android:gravity="center"
+                            ></TextView>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="12"/>
+                        <TextView
+                            android:id="@+id/jisaTextView"
+                            android:background="@drawable/insert_line_color"
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="155"
+
+
+
+                            android:gravity="center"
+                            ></TextView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="32"
+                    android:weightSum="322"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="170"
+                        android:weightSum="170"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                        <TextView
+                            android:id="@+id/noSunTextView"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="170"
+
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="142"
+                        android:weightSum="142"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                        <TextView
+                            android:id="@+id/directionTextView"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="142"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="322"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="차로제한"
+                        android:fontFamily="@font/notokrd"
+                        android:textSize="20dp"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <TextView
+
+                        android:id="@+id/roadlimitTextView"
+                        android:background="@drawable/insert_line_color"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="232"
+
+                        android:gravity="center_horizontal|center_vertical"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="322"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="감독원"
+                        android:fontFamily="@font/notokrd"
+                        android:textSize="20sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <!-- -->
+                    <!--      <TextView
+                              android:background="@drawable/insert_line_color"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="242"
+                              android:textSize="20sp"/>-->
+                    <!-- -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="232"
+                        android:weightSum="232"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                   <!--     <TextView
+                            android:id="@+id/gamdokTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="242"
+
+
+                            android:gravity="center"/>-->
+                        <Spinner
+                            android:id="@+id/gamdokSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:background="#00000000"
+                            android:gravity="center_horizontal|center_vertical"
+                            ></Spinner>
+                        <TextView
+                            android:id="@+id/gamdokTextView"
+
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="212"
+                            android:background="#00000000"
+                            android:gravity="center_horizontal|center_vertical"
+                            ></TextView>
+                        <Button
+                            android:id="@+id/buttongamdok"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="20"
+                            android:background="@drawable/gongsa_spinner_none_checking_btn"/>
+
+
+                    </LinearLayout>
+                    <!-- -->
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="322"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="작업유형"
+                        android:fontFamily="@font/notokrd"
+                        android:textSize="20sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <!-- -->
+                    <!--      <TextView
+                              android:background="@drawable/insert_line_color"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="242"
+                              android:textSize="20sp"/>-->
+                    <!-- -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="232"
+                        android:weightSum="232"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                    <!--    <TextView
+                            android:id="@+id/workTypeTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="242"
+
+
+                            android:gravity="center"/>-->
+                        <Spinner
+                            android:id="@+id/workTypeSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:background="#00000000"
+                            android:gravity="center_horizontal|center_vertical"
+                            ></Spinner>
+                        <TextView
+                            android:id="@+id/workTypeTextView"
+
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="212"
+                            android:background="#00000000"
+                            android:gravity="center_horizontal|center_vertical"
+                            ></TextView>
+                        <Button
+                            android:id="@+id/workTypeButton"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="20"
+                            android:background="@drawable/gongsa_spinner_none_checking_btn"/>
+
+                    </LinearLayout>
+                    <!-- -->
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="290"
+            android:background="@color/workInsertBottomBackGround"
+            android:weightSum="360"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="322">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+
+                                android:src="@drawable/icon_work" />
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="22"/>
+
+                            <TextView
+                                android:layout_width="299dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+                                android:text="공사내용"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal"
+                            android:weightSum="322"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/insert_line_color"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+                            <!-- <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="100"
+                                 android:text="-"
+                                 android:textSize="30sp"
+                                 android:gravity="center_vertical|center_horizontal"/>
+                             <View
+                                 android:layout_width="1dp"
+                                 android:layout_height="30dp"
+                                 android:background="@color/menuButtonThirdColor"/>
+                             <TextView
+                                 android:gravity="center_vertical|center_horizontal"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="222"
+                                 android:text="-"
+                                 android:textSize="30sp"/>-->
+                            <EditText
+                                android:id="@+id/gongsaContent"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="322"
+                                android:textSize="13sp"
+                                android:gravity="center"
+
+                                android:background="@drawable/insert_line_color"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="공사시간"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:text="시작"
+                                android:textSize="20sp"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="160"
+                                android:background="@drawable/insert_line_color"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/startDateTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="70"
+
+                                    android:fontFamily="@font/notokrm"
+                                    android:textSize="15sp"
+
+                                    android:gravity="center_vertical|center_horizontal"/>
+                                <ImageView
+                                    android:id="@+id/startDateImageView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="30"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/gongsa_calendar_btn"
+                                    />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:orientation="horizontal"
+
+                                android:background="@drawable/insert_line_color">
+                                <!--   <TextView
+                                       android:id="@+id/starthour"
+                                       android:gravity="center_vertical|center_horizontal"
+                                       android:layout_width="0dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="25"
+                                       android:textSize="20sp"
+                                       />-->
+                                <Spinner
+                                    android:id="@+id/startHourSpinner"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+                                    android:background="#00000000"
+                                    android:paddingLeft="0dp"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:id="@+id/startHourTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="시"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:background="@drawable/insert_line_color">
+                                <TextView
+
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:id="@+id/startMinuteTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+
+
+                                    android:layout_weight="25"/>
+                                <Spinner
+                                    android:id="@+id/startMinuteSpinner"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+                                    android:background="#00000000"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="분"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:text="종료"
+                                android:textSize="20sp"
+                                />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="160"
+                                android:background="@drawable/insert_line_color"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/endDateTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="70"
+                                    android:fontFamily="@font/notokrm"
+                                    android:textSize="15sp"
+
+                                    android:gravity="center_vertical|center_horizontal"/>
+                                <ImageView
+                                    android:id="@+id/endDateImageView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="30"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/gongsa_calendar_btn" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:orientation="horizontal"
+
+                                android:background="@drawable/insert_line_color">
+                                <!--<TextView
+                                    android:id="@+id/endhour"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:textSize="20sp"
+                                    />-->
+                                <!--   <Spinner
+                                       android:id="@+id/endhour"
+                                       android:gravity="center_vertical|center_horizontal"
+                                       android:layout_width="0dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="25"
+                                       android:textSize="20sp"
+                                       />-->
+                                <TextView
+
+
+                                    android:gravity="center_vertical|center_horizontal"
+
+                                    android:id="@+id/endHourTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"/>
+                                <Spinner
+                                    android:id="@+id/endHourSpinner"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="시"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:background="@drawable/insert_line_color">
+                                <!--<TextView
+                                    android:id="@+id/endminute"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+
+                                    android:textSize="20sp"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="25"/>-->
+                                <TextView
+
+                                    android:gravity="center_vertical|center_horizontal"
+
+                                    android:id="@+id/endMinuteTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"/>
+                                <Spinner
+                                    android:id="@+id/endMinuteSpinner"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="분"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="35dp"
+                             android:weightSum="322"
+                             android:orientation="horizontal">
+                             <TextView
+                                 android:gravity="center_vertical|center_horizontal"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="65"
+                                 android:text="시작"
+                                 android:textSize="20sp"/>
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="140"
+                                 android:background="@drawable/insert_line_color"
+                                 android:weightSum="100"
+                                 android:orientation="horizontal">
+                                 <TextView
+                                     android:id="@+id/startDateTextView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="60"
+
+                                     android:fontFamily="@font/notokrm"
+                                     android:textSize="15sp"
+
+                                     android:gravity="center_vertical|center_horizontal"/>
+                                 <ImageView
+                                     android:id="@+id/startDateImageView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="40"
+                                     android:background="@drawable/gongsa_calendar_btn"/>
+                             </LinearLayout>
+                             <View
+                                 android:layout_width="0dp"
+                                 android:layout_height="0dp"
+                                 android:layout_weight="10"/>
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="45"
+                                 android:weightSum="45"
+                                 android:orientation="horizontal"
+
+                                 android:background="@drawable/insert_line_color">
+                                 &lt;!&ndash;   <TextView
+                                        android:id="@+id/starthour"
+                                        android:gravity="center_vertical|center_horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textSize="20sp"
+                                        />&ndash;&gt;
+                                 <Spinner
+                                     android:id="@+id/startHourSpinner"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="0"
+                                     android:background="#00000000"
+                                     android:paddingLeft="0dp"
+
+                                     android:gravity="center_horizontal|center_vertical"
+                                     ></Spinner>
+                                 <TextView
+
+                                     android:gravity="center_vertical|center_horizontal"
+                                     android:id="@+id/startHourTextView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="25"/>
+                                 <TextView
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="20"
+                                     android:text="시"
+                                     android:gravity="center_vertical|center_horizontal"
+                                     android:textSize="20sp"/>
+                             </LinearLayout>
+                             <View
+                                 android:layout_width="0dp"
+                                 android:layout_height="0dp"
+                                 android:layout_weight="10"/>
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="45"
+                                 android:weightSum="45"
+                                 android:background="@drawable/insert_line_color">
+                                 <TextView
+
+                                     android:gravity="center_vertical|center_horizontal"
+                                     android:id="@+id/startMinuteTextView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+
+
+                                     android:layout_weight="25"/>
+                                 <Spinner
+                                     android:id="@+id/startMinuteSpinner"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="0"
+                                     android:background="#00000000"
+                                     android:gravity="center_horizontal|center_vertical"
+                                     ></Spinner>
+                                 <TextView
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="20"
+                                     android:text="분"
+                                     android:gravity="center_vertical|center_horizontal"
+                                     android:textSize="20sp"/>
+                             </LinearLayout>
+                         </LinearLayout>
+
+
+                         <View
+                             android:layout_width="match_parent"
+                             android:layout_height="20dp"/>
+
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="35dp"
+                             android:weightSum="322"
+                             android:orientation="horizontal">
+                             <TextView
+                                 android:gravity="center_vertical|center_horizontal"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="65"
+                                 android:text="종료"
+                                 android:textSize="20sp"
+                                 />
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="140"
+                                 android:background="@drawable/insert_line_color"
+                                 android:weightSum="100"
+                                 android:orientation="horizontal">
+                                 <TextView
+                                     android:id="@+id/endDateTextView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="60"
+                                     android:fontFamily="@font/notokrm"
+                                     android:textSize="15sp"
+
+                                     android:gravity="center_vertical|center_horizontal"/>
+                                 <ImageView
+                                     android:id="@+id/endDateImageView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="40"
+                                     android:background="@drawable/gongsa_calendar_btn"/>
+                             </LinearLayout>
+                             <View
+                                 android:layout_width="0dp"
+                                 android:layout_height="0dp"
+                                 android:layout_weight="10"/>
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="45"
+                                 android:weightSum="45"
+                                 android:orientation="horizontal"
+
+                                 android:background="@drawable/insert_line_color">
+                                 &lt;!&ndash;<TextView
+                                     android:id="@+id/endhour"
+                                     android:gravity="center_vertical|center_horizontal"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="25"
+                                     android:textSize="20sp"
+                                     />&ndash;&gt;
+                                 &lt;!&ndash;   <Spinner
+                                        android:id="@+id/endhour"
+                                        android:gravity="center_vertical|center_horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:textSize="20sp"
+                                        />&ndash;&gt;
+                                 <TextView
+
+
+                                     android:gravity="center_vertical|center_horizontal"
+
+                                     android:id="@+id/endHourTextView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="25"/>
+                                 <Spinner
+                                     android:id="@+id/endHourSpinner"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="0"
+
+                                     android:gravity="center_horizontal|center_vertical"
+                                     ></Spinner>
+                                 <TextView
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="20"
+                                     android:text="시"
+                                     android:gravity="center_vertical|center_horizontal"
+                                     android:textSize="20sp"/>
+                             </LinearLayout>
+                             <View
+                                 android:layout_width="0dp"
+                                 android:layout_height="0dp"
+                                 android:layout_weight="10"/>
+                             <LinearLayout
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="45"
+                                 android:weightSum="45"
+                                 android:background="@drawable/insert_line_color">
+                                 &lt;!&ndash;<TextView
+                                     android:id="@+id/endminute"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+
+                                     android:textSize="20sp"
+                                     android:gravity="center_horizontal|center_vertical"
+                                     android:layout_weight="25"/>&ndash;&gt;
+                                 <TextView
+
+                                     android:gravity="center_vertical|center_horizontal"
+
+                                     android:id="@+id/endMinuteTextView"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="25"/>
+                                 <Spinner
+                                     android:id="@+id/endMinuteSpinner"
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="0"
+
+
+                                     android:gravity="center_horizontal|center_vertical"
+                                     ></Spinner>
+                                 <TextView
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="20"
+                                     android:text="분"
+                                     android:gravity="center_vertical|center_horizontal"
+                                     android:textSize="20sp"/>
+                             </LinearLayout>
+                         </LinearLayout>-->
+                   <!--     <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="65"
+                                android:text="시작"
+                                android:textSize="20sp"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="140"
+                                android:background="@drawable/insert_line_color"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/startDateTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="100"
+
+                                    android:fontFamily="@font/notokrm"
+                                    android:gravity="center_vertical|center_horizontal"/>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:orientation="horizontal"
+
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;   <TextView
+                                       android:id="@+id/starthour"
+                                       android:gravity="center_vertical|center_horizontal"
+                                       android:layout_width="0dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="25"
+                                       android:textSize="20sp"
+                                       />&ndash;&gt;
+                                <TextView
+                                    android:id="@+id/starthour"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+                                    android:paddingLeft="0dp"
+                                    android:text="20"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></TextView>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="시"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;             <TextView
+                                                 android:id="@+id/startminute"
+                                                 android:layout_width="0dp"
+                                                 android:layout_height="match_parent"
+
+                                                 android:textSize="20sp"
+                                                 android:gravity="center_horizontal|center_vertical"
+                                                 android:layout_weight="25"/>&ndash;&gt;
+                                <TextView
+                                    android:id="@+id/startminute"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+                                    android:text="59"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></TextView>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="분"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="65"
+                                android:text="종료"
+                                android:textSize="20sp"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="140"
+                                android:background="@drawable/insert_line_color"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/endDateTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="100"
+                                    android:fontFamily="@font/notokrm"
+
+
+
+                                    android:gravity="center_vertical|center_horizontal"/>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:orientation="horizontal"
+
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;<TextView
+                                    android:id="@+id/endhour"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:textSize="20sp"
+                                    />&ndash;&gt;
+                                &lt;!&ndash;   <Spinner
+                                       android:id="@+id/endhour"
+                                       android:gravity="center_vertical|center_horizontal"
+                                       android:layout_width="0dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="25"
+                                       android:textSize="20sp"
+                                       />&ndash;&gt;
+                                <TextView
+                                    android:id="@+id/endhour"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+                                    android:text="24"
+
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></TextView>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="시"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;<TextView
+                                    android:id="@+id/endminute"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+
+                                    android:textSize="20sp"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="25"/>&ndash;&gt;
+                                <TextView
+                                    android:id="@+id/endminute"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+                                    android:text="1"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></TextView>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="분"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="공사구간"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        <!--ㅇㅇ-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:id="@+id/startGuganTextView"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+
+
+                                android:background="@drawable/insert_line_color"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="22"
+                                android:text="~"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="30sp"/>
+                            <TextView
+                                android:id="@+id/endGuganTextView"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+
+
+                                android:background="@drawable/insert_line_color"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <!-- 인원 및 장비-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="인원 및 장비"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        <!--ㅇㅇ-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal"
+                            android:background="@drawable/insert_line_color">
+
+                            <!--   <TextView
+                                   android:gravity="center_vertical|center_horizontal"
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_weight="50"
+                                   android:text="장비"
+                                   android:textSize="20sp"/>-->
+
+
+                          <!--  <TextView
+                                android:id="@+id/jackupinwonetTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="322"
+                                android:background="@drawable/insert_line_color"
+                                android:gravity="center_vertical|center_horizontal"
+
+
+                                />-->
+                            <LinearLayout
+                                android:id="@+id/inonwjangbilayout"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="100"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:id="@+id/inwonJangbiTextView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"/>
+                                <Spinner
+                                    android:id="@+id/inwonJangbiSpinner"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+                                    android:background="#00000000"
+
+                                    ></Spinner>
+                                <Button
+                                    android:id="@+id/buttoninwonjangbi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="20"
+                                    android:background="@drawable/gongsa_spinner_none_checking_btn"/>
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/jackupinwonetTextView"
+                                android:background="@drawable/insert_line_color"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="222"
+
+                                android:textSize="13sp"/>
+                            <!--        <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="222"
+                                        android:weightSum="222"
+                                        android:gravity="center_vertical|center_horizontal"
+                                        android:orientation="horizontal">
+                                        <Spinner
+                                            android:id="@+id/inwonjangbisel"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="202"
+                                            android:background="#00000000"
+
+                                            ></Spinner>
+                                        <Button
+                                            android:id="@+id/buttoninwonjangbisel"
+                                            android:layout_width="0dp"
+                                            android:layout_height="20dp"
+
+                                            android:layout_weight="20"
+                                            android:background="@drawable/btn_dropdown"/>
+
+                                    </LinearLayout>-->
+                        </LinearLayout>
+                        <!--감독원-->
+
+                        <!--고순대 접수번호-->
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="15dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="고순대 접수번호"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        <!--ㅇㅇ-->
+                        <LinearLayout
+                            android:background="@drawable/insert_line_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/gosundatTextView"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="322"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:textSize="13sp"
+                                android:background="@drawable/insert_line_color"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"/>
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="54"
+            android:weightSum="360"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/li_registerBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="180"
+                android:background="@drawable/gongsa_workplan_insert"
+                android:gravity="center_horizontal|center_vertical"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_ok"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="수 정"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/notokrm"
+                    android:textColor="@color/item_ing"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/li_ResetBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="180"
+                android:background="@drawable/gongsa_workplan_register_chogiwhabtn"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_reset"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="초기화"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/notokrm"
+                    android:textStyle="bold"
+                    android:textColor="@color/item_ing"
+                    android:gravity="center_vertical|center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="584"
+        android:weightSum="584"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="202"
+            android:background="@color/workInsertCenterBackGround"
+            android:weightSum="360"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="322"
+                android:gravity="top"
+                android:weightSum="222"
+                android:orientation="vertical">
+
+                &lt;!&ndash;   <Spinner
+                       android:id="@+id/spinner1"
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="32"
+
+                       android:includeFontPadding="false"
+                       android:background="@drawable/icon_ok"
+                       >
+
+
+                   </Spinner>&ndash;&gt;
+
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="32"
+                    android:orientation="horizontal"
+                    android:weightSum="322">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="322"
+                        android:weightSum="322"
+                        android:orientation="horizontal"
+                        >
+                        &lt;!&ndash;  <Spinner
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:includeFontPadding="false"></Spinner>&ndash;&gt;
+                        <TextView
+                            android:id="@+id/updateBonbuTextView"
+                            android:background="@drawable/insert_line_color"
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="155"
+
+
+
+                            android:gravity="center"
+                            ></TextView>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="12"/>
+                        <TextView
+                            android:id="@+id/updateJisaTextView"
+                            android:background="@drawable/insert_line_color"
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="155"
+                            android:gravity="center"
+                            ></TextView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="32"
+                    android:weightSum="322"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="170"
+                        android:weightSum="170"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                        <TextView
+                            android:id="@+id/updateNosunTextView"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="170"
+
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="142"
+                        android:weightSum="142"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                        <TextView
+                            android:id="@+id/directionTextView"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="142"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="32"
+                    android:weightSum="322"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="차로제한"
+                        android:fontFamily="@font/notokrd"
+                        android:textSize="20sp"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    <TextView
+
+                        android:id="@+id/updateRoadDirectionTextView"
+                        android:background="@drawable/insert_line_color"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="232"
+
+                        android:gravity="center_horizontal|center_vertical"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="32"
+                    android:weightSum="322"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="감독관"
+                        android:fontFamily="@font/notokrd"
+                        android:textSize="20sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    &lt;!&ndash; &ndash;&gt;
+                    &lt;!&ndash;      <TextView
+                              android:background="@drawable/insert_line_color"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="242"
+                              android:textSize="20sp"/>&ndash;&gt;
+                    &lt;!&ndash; &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="232"
+                        android:weightSum="232"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                        <TextView
+                            android:id="@+id/updateGamdokTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="242"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    &lt;!&ndash; &ndash;&gt;
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="322"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="작업유형"
+                        android:fontFamily="@font/notokrd"
+                        android:textSize="20sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                    &lt;!&ndash; &ndash;&gt;
+                    &lt;!&ndash;      <TextView
+                              android:background="@drawable/insert_line_color"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="242"
+                              android:textSize="20sp"/>&ndash;&gt;
+                    &lt;!&ndash; &ndash;&gt;
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="232"
+                        android:weightSum="232"
+                        android:orientation="horizontal"
+                        android:background="@drawable/insert_line_color">
+                        <TextView
+                            android:id="@+id/workTypeTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="242"
+
+
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    &lt;!&ndash; &ndash;&gt;
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="328"
+            android:background="@color/workInsertBottomBackGround"
+            android:weightSum="360"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="322">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+
+                                android:src="@drawable/icon_work" />
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="22"/>
+
+                            <TextView
+                                android:layout_width="299dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+                                android:text="공사내용"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal"
+                            android:weightSum="322"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/insert_line_color">
+                            &lt;!&ndash; <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="100"
+                                 android:text="-"
+                                 android:textSize="30sp"
+                                 android:gravity="center_vertical|center_horizontal"/>
+                             <View
+                                 android:layout_width="1dp"
+                                 android:layout_height="30dp"
+                                 android:background="@color/menuButtonThirdColor"/>
+                             <TextView
+                                 android:gravity="center_vertical|center_horizontal"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight="222"
+                                 android:text="-"
+                                 android:textSize="30sp"/>&ndash;&gt;
+                            <TextView
+                                android:id="@+id/workContentTextView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="322"
+
+                                android:gravity="center"
+
+                                android:background="@drawable/insert_line_color"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="공사시간"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="65"
+                                android:text="시작"
+                                android:textSize="20sp"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="140"
+                                android:background="@drawable/insert_line_color"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/startdate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="60"
+                                    android:textColor="#FFFFFF"
+                                    android:fontFamily="@font/notokrm"
+                                    android:textSize="15sp"
+                                    android:gravity="center_vertical|center_horizontal"/>
+                                <ImageView
+                                    android:id="@+id/setstarttime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+                                    android:background="@drawable/gongsa_calendar_btn"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:orientation="horizontal"
+
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;   <TextView
+                                       android:id="@+id/starthour"
+                                       android:gravity="center_vertical|center_horizontal"
+                                       android:layout_width="0dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="25"
+                                       android:textSize="20sp"
+                                       />&ndash;&gt;
+                                <Spinner
+                                    android:id="@+id/starthour"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+                                    android:paddingLeft="0dp"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="시"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;             <TextView
+                                                 android:id="@+id/startminute"
+                                                 android:layout_width="0dp"
+                                                 android:layout_height="match_parent"
+
+                                                 android:textSize="20sp"
+                                                 android:gravity="center_horizontal|center_vertical"
+                                                 android:layout_weight="25"/>&ndash;&gt;
+                                <Spinner
+                                    android:id="@+id/startminute"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="분"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="65"
+                                android:text="종료"
+                                android:textSize="20sp"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="140"
+                                android:background="@drawable/insert_line_color"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/enddate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="60"
+                                    android:fontFamily="@font/notokrm"
+                                    android:textSize="15sp"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center_vertical|center_horizontal"/>
+                                <ImageView
+                                    android:id="@+id/setendtime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+                                    android:background="@drawable/gongsa_calendar_btn"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:orientation="horizontal"
+
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;<TextView
+                                    android:id="@+id/endhour"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:textSize="20sp"
+                                    />&ndash;&gt;
+                                &lt;!&ndash;   <Spinner
+                                       android:id="@+id/endhour"
+                                       android:gravity="center_vertical|center_horizontal"
+                                       android:layout_width="0dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="25"
+                                       android:textSize="20sp"
+                                       />&ndash;&gt;
+                                <Spinner
+                                    android:id="@+id/endhour"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="시"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="45"
+                                android:weightSum="45"
+                                android:background="@drawable/insert_line_color">
+                                &lt;!&ndash;<TextView
+                                    android:id="@+id/endminute"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+
+                                    android:textSize="20sp"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="25"/>&ndash;&gt;
+                                <Spinner
+                                    android:id="@+id/endminute"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:background="#00000000"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    ></Spinner>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="20"
+                                    android:text="분"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="공사구간"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        &lt;!&ndash;ㅇㅇ&ndash;&gt;
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+                                android:text="경주 102km"
+
+                                android:background="@drawable/insert_line_color"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="22"
+                                android:text="~"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="30sp"/>
+                            <TextView
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="150"
+                                android:text="상주 102km"
+
+                                android:background="@drawable/insert_line_color"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                        &lt;!&ndash; 인원 및 장비&ndash;&gt;
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="인원 및 장비"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        &lt;!&ndash;ㅇㅇ&ndash;&gt;
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal"
+                            android:background="@drawable/insert_line_color">
+
+                            &lt;!&ndash;   <TextView
+                                   android:gravity="center_vertical|center_horizontal"
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_weight="50"
+                                   android:text="장비"
+                                   android:textSize="20sp"/>&ndash;&gt;
+                            <LinearLayout
+                                android:id="@+id/inonwjangbilayout"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="100"
+                                android:weightSum="100"
+                                android:orientation="horizontal">
+                                <Spinner
+                                    android:id="@+id/inwonjangbi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:background="#00000000"
+
+                                    ></Spinner>
+                                <Button
+                                    android:id="@+id/buttoninwonjangbi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="20"
+                                    android:background="@drawable/btn_dropdown"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/jackupinwonet"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="222"
+                                android:background="@drawable/insert_line_color"
+                                android:gravity="center_vertical|center_horizontal"
+
+                                android:text="40명"
+                                android:textSize="20sp" />
+                            &lt;!&ndash;        <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="222"
+                                        android:weightSum="222"
+                                        android:gravity="center_vertical|center_horizontal"
+                                        android:orientation="horizontal">
+                                        <Spinner
+                                            android:id="@+id/inwonjangbisel"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="202"
+                                            android:background="#00000000"
+
+                                            ></Spinner>
+                                        <Button
+                                            android:id="@+id/buttoninwonjangbisel"
+                                            android:layout_width="0dp"
+                                            android:layout_height="20dp"
+
+                                            android:layout_weight="20"
+                                            android:background="@drawable/btn_dropdown"/>
+
+                                    </LinearLayout>&ndash;&gt;
+                        </LinearLayout>
+                        &lt;!&ndash;감독원&ndash;&gt;
+
+                        &lt;!&ndash;고순대 접수번호&ndash;&gt;
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="15dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="고순대 접수번호"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+                        &lt;!&ndash;ㅇㅇ&ndash;&gt;
+                        <LinearLayout
+                            android:background="@drawable/insert_line_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:weightSum="322"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/todayWorkUpdateGosundae"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="322"
+                                android:text="123123132123232"
+
+                                android:background="@drawable/insert_line_color"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/prevewLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="330dp"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"/>
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp">
+
+                                &lt;!&ndash;<com.ex.gongsa.Preview
+                                    android:id="@+id/ForgetCameraPreview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp"
+
+                                    />&ndash;&gt;
+
+                                <ImageView
+                                    android:scaleType="fitXY"
+                                    android:id="@+id/examplePic"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent" />
+
+                                <TableLayout
+                                    android:id="@+id/tablelayout"
+                                    android:layout_width="200sp"
+                                    android:layout_height="200sp"
+                                    android:visibility="visible"
+                                    android:layout_gravity="right|bottom"
+
+                                    android:background="@drawable/camera_line"
+                                    >
+                                    <TableRow
+                                        android:layout_marginBottom="0dp"
+
+                                        android:weightSum="100"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/camera_line"
+                                            android:text="이름"
+
+                                            android:textColor="@color/textColorBlack"
+                                            android:layout_weight="30"/>
+
+                                        <TextView
+                                            android:text="이름"
+                                            android:layout_weight="70"
+                                            android:textColor="@color/textColorBlack"/>
+                                    </TableRow>
+                                    <TableRow
+                                        android:weightSum="100"
+                                        android:background="@drawable/camera_line"
+                                        android:orientation="horizontal"
+                                        >
+
+                                        <TextView
+                                            android:layout_height="match_parent"
+                                            android:text="이름"
+
+                                            android:textColor="@color/textColorBlack"
+                                            android:layout_weight="30"/>
+
+                                        <TextView
+                                            android:text="이름"
+                                            android:layout_weight="70"
+                                            android:textColor="@color/textColorBlack"/>
+                                    </TableRow>
+                                </TableLayout>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="54"
+            android:weightSum="360"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="180"
+                android:background="@color/workInsertReset"
+                android:gravity="center_horizontal|center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_reset"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="초기화"
+                    android:textColor="@color/item_ing"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/notokrm"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/registerLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="180"
+                android:background="@color/workInsert"
+                android:gravity="center_horizontal|center_vertical"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_ok"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="수 정"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/notokrm"
+                    android:textColor="@color/item_ing"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|center_horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>-->
+</LinearLayout>

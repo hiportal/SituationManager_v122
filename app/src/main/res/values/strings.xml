@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">고속도로 상황대응</string>
+    <string name="package_name">com.ex.situationmanager</string>
+	
+    
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Find People</item>
+        <item >Photos</item>
+        <item >Communities</item>
+        <item >Pages</item>
+        <item >What\'s Hot</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="location_term">
+	    <b>1. 목적</b>
+        \n이 동의서는 개인정보 수집, 이용, 제공 등에 관한 법률의 규정에 의거 고속도로 상황대응 앱의 상황대응 서비스와 관련하여 사용자와 한국도로공사 간 상호간에 권리 및 기타 제반사항을 정함을 목적으로 합니다.
+		\n\n\n<b>2. 개인정보 이용에 관한 동의</b>
+		\n<b>가. 이용 목적</b>
+		\n사용자의 현재 위치정보 및 전화번호(처리 상황 회신용)를 이용하여 고속도로 사고처리를 목적으로 합니다.
+		\n<b>나. 이용 항목</b>
+		\n사용자 위치정보, 전화번호
+        \n<b>다. 이용 기간</b>
+		\n노선상의 현재 위치 확인 시에만 사용되며, 서버로 전송/보관되지 않음
+        \n<b>라. 백그라운드에서 실시간 위치정보 전송</b>
+        \n고속도로 상황대응은 앱이 종료되었거나 사용 중이 아닐 때도 위치 데이터를 수집하여 사고제보 및 사고처리 기능을 지원합니다.
+        \n<b>마. 백그라운드에서 전화번호 전송</b>
+        \n고속도로 상황대응은 앱이 종료되었거나 사용 중이 아닐 때도 전화번호를 수집하여 사고처리 기능을 지원합니다.
+        \n\n\n<b>3. GPS/WIFI/데이터네트워크 활성화 안내</b>
+        \n고속도로 상황대응 이용 시 정확한 위치정보 전송을 위해 위치서비스(GPS), WIFI 또는 데이터네트워크(3G, 4G) 등의 활성화가 필요하며, 이로 인해 데이터 이용요금이 발생할 수 있습니다.\n</string>
+
+    <string name="agree">동의</string>
+    <string name="disagree">동의안함</string>
+
+    <string name="location_dialog">
+        <b>고속도로 상황대응은 앱이 종료되었거나 사용 중이 아닐 때도 위치 데이터를 수집하여 사고제보 및 사고처리 기능을 지원합니다.</b>
+        \n\n해당 기능을 위해 위치 액세스 권한을 항상 허용으로 설정해주세요.
+    </string>
+	
+</resources>

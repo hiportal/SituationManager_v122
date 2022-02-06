@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    <color name="item_ing">#ffffff</color>
+    <color name="item_stop">#FDCA49</color>
+    <color name="item_selected">#BEF202</color>
+    <color name="black">#000000</color>
+
+    <color name="popup_title_background">#E5E5E7</color>
+    <color name="popup_title_color">#68676A</color>
+
+    <!-- 공사관리-->
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorTopBackground">#202429</color>
+    <color name="contentsBackground">#3c8dc2</color>
+    <color name="menuButtonFirstColor">#a3d8fa</color>
+    <color name="menuButtonSecondColor">#abbae3</color>
+    <color name="menuButtonThirdColor">#7e7e7e</color>
+
+    <color name="textColorBlack">#0A0A0A</color>
+    <color name="newTextColor">#344978</color>
+    <color name="workInsertCenterBackGround">#3b4753</color>
+    <color name="workInsertBottomBackGround">#26333f</color>
+    <color name="workInsertReset">#3e86aa</color>
+    <color name="workInsert">#00d2ff</color>
+
+    <color name="colorWorkEndPopUp">#1371BC</color>
+
+    <color name="workPlanLinearLayout">#495764</color>
+
+
+    <!-- 공사관리 끝-->
+</resources>

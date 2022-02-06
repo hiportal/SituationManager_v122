@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ex.situationmanager"
+        minSdkVersion 19
+
+        targetSdkVersion 30
+        versionCode 122
+        versionName "17.81"
+    }
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == "com.android.support") {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion "26.+"
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false // true = 사진전송 오류
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt-3.5.3'
+        }
+
+        release {
+            minifyEnabled false // true = 사진전송 오류
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt-3.5.3'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+
+    }
+}
+
+
+dependencies {
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation files('libs/apache-mime4j-0.6.jar')
+    implementation files('libs/commons-codec-1.4.jar')
+    implementation files('libs/httpcore-4.3.jar')
+    implementation files('libs/httpmime-4.3.jar')
+    compileOnly 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+
+    //recyclerview
+    implementation "com.android.support:recyclerview-v7:28.0.0"
+
+}

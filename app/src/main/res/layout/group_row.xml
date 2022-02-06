@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:background="@drawable/item_list_bg" -->
+<LinearLayout 	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/slide_child_back_img"
+    >
+
+    <LinearLayout
+        android:id="@+id/group_row"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10.0dip"
+        android:gravity="center_vertical"
+        android:weightSum="90"
+        android:background="@drawable/slide_child_back_img"
+        >
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/IISlideTextView"
+            android:background="@drawable/slide_child_back_img"
+            android:layout_weight="33"
+            ></TextView>
+        <TextView
+            android:textColor="@android:color/black"
+            android:background="@drawable/slide_child_back_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/IISlideTextView2"
+            android:layout_weight="55"
+            ></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
